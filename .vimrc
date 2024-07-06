@@ -40,3 +40,16 @@ autocmd VimEnter * NERDTree | wincmd p
 
 "Exit Vim if NERDTree is the only window remaining in the only tab
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+"Gitgutter update time
+set updatetime=100
+"Enable gitgutter signcolumns
+set signcolumn=yes
+
+"Colours of gitgutter signs
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+"Enable gitgutter line highlighting
+let g:gitgutter_highlight_lines = 1
