@@ -51,5 +51,5 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-"Enable gitgutter line highlighting
-let g:gitgutter_highlight_lines = 1
+filetype plugin on
+let g:NERDCreateDefaultMappings = 1
