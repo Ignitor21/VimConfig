@@ -23,12 +23,16 @@ set mouse=a
 set hlsearch
 
 "Work with system buffer
-map <C-S-c> "+y
-map <C-S-v> "+p
+map <C-c> "+y
+map <C-v> "+p
 
 "Move lines up and down with alt+up or alt+down
-nnoremap <A-Up> :m-2<CR>
-nnoremap <A-Down> :m+<CR>
+nnoremap <M-Up> :m .-2<CR>==
+nnoremap <M-Down> :m .+1<CR>==
+inoremap <M-Down> <Esc>:m .+1<CR>==gi
+inoremap <M-Up> <Esc>:m .-2<CR>==gi
+vnoremap <M-Down> :m '>+1<CR>gv=gv
+vnoremap <M-Up> :m '<-2<CR>gv=gv
 
 "Enable NerdTree
 call pathogen#infect()
@@ -51,5 +55,9 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-filetype plugin on
-let g:NERDCreateDefaultMappings = 1
+"Enable gitgutter line highlighting
+let g:gitgutter_highlight_lines = 0
+
+nmap <C-Up> <Plug>(GitGutterPrevHunk)
+nmap <C-Down> <Plug>(GitGutterNextHunk)
+nmap <C-Del> <Plug>(GitGutterUndoHunk)
