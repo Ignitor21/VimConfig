@@ -6,3 +6,4 @@
 - [Large number of colorschemes](https://github.com/flazz/vim-colorschemes?tab=readme-ov-file)
 - [Colorsheme swicher](https://github.com/felixhummel/setcolors.vim)
 - [tcomment](https://github.com/tomtom/tcomment_vim)
+- [vim-airline](https://github.com/vim-airline/vim-airline)
