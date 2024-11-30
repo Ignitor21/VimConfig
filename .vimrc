@@ -22,6 +22,9 @@ set mouse=a
 "Mark all results of search
 set hlsearch
 
+"Disable creating swap files
+set noswapfile
+
 "Work with system buffer
 map <C-c> "+y
 map <C-v> "+p
@@ -47,6 +50,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 "Gitgutter update time
 set updatetime=100
+
 "Enable gitgutter signcolumns
 set signcolumn=yes
 
