@@ -25,6 +25,9 @@ set hlsearch
 "Disable creating swap files
 set noswapfile
 
+"Using of system buffer
+set clipboard=unnamedplus
+
 "Work with system buffer
 map <C-c> "+y
 map <C-v> "+p
@@ -36,6 +39,10 @@ inoremap <M-Down> <Esc>:m .+1<CR>==gi
 inoremap <M-Up> <Esc>:m .-2<CR>==gi
 vnoremap <M-Down> :m '>+1<CR>gv=gv
 vnoremap <M-Up> :m '<-2<CR>gv=gv
+
+" Select all text
+nnoremap <C-a> ggVG
+inoremap <C-a> <Esc>ggVG
 
 "Enable NerdTree
 call pathogen#infect()
@@ -59,9 +66,9 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-"Enable gitgutter line highlighting
-let g:gitgutter_highlight_lines = 0
-
-nmap <C-Up> <Plug>(GitGutterPrevHunk)
+nmap <C-Up>   <Plug>(GitGutterPrevHunk)
 nmap <C-Down> <Plug>(GitGutterNextHunk)
-nmap <C-Del> <Plug>(GitGutterUndoHunk)
+nmap <C-Del>  <Plug>(GitGutterUndoHunk)
+
+"Enable brackets colors
+let g:rainbow_active = 1 
