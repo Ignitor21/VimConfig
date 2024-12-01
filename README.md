@@ -8,3 +8,4 @@
 - [tcomment](https://github.com/tomtom/tcomment_vim)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 - [rainbow](https://github.com/luochen1990/rainbow)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)

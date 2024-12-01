@@ -71,4 +71,4 @@ nmap <C-Down> <Plug>(GitGutterNextHunk)
 nmap <C-Del>  <Plug>(GitGutterUndoHunk)
 
 "Enable brackets colors
-let g:rainbow_active = 1 
+let g:rainbow_active = 1
