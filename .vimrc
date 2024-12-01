@@ -47,7 +47,7 @@ inoremap <C-a> <Esc>ggVG
 "Enable NerdTree
 call pathogen#infect()
 syntax on
-filetype plugin indent on
+filetype plugin on
 
 "Start NERDTree and put the cursor back in the other window
 autocmd VimEnter * NERDTree | wincmd p
