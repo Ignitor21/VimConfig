@@ -25,9 +25,6 @@ set hlsearch
 "Disable creating swap files
 set noswapfile
 
-"Using of system buffer
-set clipboard=unnamedplus
-
 "Work with system buffer
 map <C-c> "+y
 map <C-v> "+p
